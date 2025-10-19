@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+header, footer {
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 40px;
+  text-align: center;
+}
+
+
+/* === Step 3: Responsive Part === */
+@media (max-width: 992px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  header, footer {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
